@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 import hms1 from "./assets/hms-1.png";
+import hms2 from "./assets/hms-2.png";
+import hms3 from "./assets/hms-3.png";
 import chat1 from "./assets/chat1.png";
+import chat2 from "./assets/chat2.png";
+import chat3 from "./assets/chat3.png";
+import chat4 from "./assets/chat4.png";
+import img1 from "./assets/img1.png";
+import img2 from "./assets/img2.png";
+import img3 from "./assets/img3.png";
 import fs1 from "./assets/fs1.png";
 import aiImg1 from "./assets/aiImg-1.png";
 import Lenis from "@studio-freight/lenis";
@@ -284,14 +292,14 @@ const App = () => {
 
         <div className="mt-15 lg:mt-30 flex flex-col gap-">
           <div className="">
-            <div className="border-b pb-3 border-neutral-600 sticky top-0 pt-10 bg-[#f5f5f5] ">
+            <div className="border-b pb-3 border-neutral-600 sticky top-0 pt-10 bg-[#f5f5f5] z-99">
               <p className="text-2xl bg-black text-white px-3  w-fit rounded-2xl">
                 01
               </p>
             </div>
 
-            <div className="mt-20  lg:mt-30 flex flex-col  max-lg:gap-10 gap-10 lg:flex-row pb-30">
-              <div className=" w-[100%] lg:flex flex-col justify-evenly">
+            <div className="mt-20 lg:w-[70%]  lg:mt-30 flex flex-col-reverse  items-center justify-center max-lg:gap-10 gap-10  pb-30 overflow-hidden">
+              <div className=" w-[100%]  lg:flex flex-col justify-evenly">
                 <a
                   href="https://hotelmanagement-bxyq.onrender.com"
                   className="w-fit"
@@ -324,7 +332,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="lg:w-[90%] ">
+              <div className="lg:w-[90%] md:hidden">
                 <a href="https://hotelmanagement-bxyq.onrender.com">
                   <img
                     className="rounded-3xl w-full h-60 lg:h-100 object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
@@ -333,17 +341,43 @@ const App = () => {
                   />
                 </a>
               </div>
+
+              <a href="https://hotelmanagement-bxyq.onrender.com">
+                <div
+                  className="relative max-md:hidden  h-[400px] max-sm:h-[300px]  rounded-3xl sm:rounded-4xl  flex flex-col gap-4 lg:flex-row  justify-center items-center mt-8  overflow-hidden 
+              border border-neutral-200 bg-white/30"
+                >
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={hms2}
+                    alt=""
+                  />
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={hms1}
+                    alt=""
+                  />
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={hms3}
+                    alt=""
+                  />
+                  <span className="absolute max-sm:hidden  top-5 right-10">
+                    <CiLocationArrow1 />
+                  </span>
+                </div>
+              </a>
             </div>
           </div>
 
           <div className="">
-            <div className="border-b pb-3 border-neutral-600 sticky top-0 pt-10 bg-[#f5f5f5] ">
+            <div className="border-b pb-3 border-neutral-600 sticky top-0 pt-10 bg-[#f5f5f5] z-99">
               <p className="text-2xl bg-black text-white px-3  w-fit rounded-2xl">
                 02
               </p>
             </div>
 
-            <div className="mt-20 lg:mt-30 flex flex-col  gap-10 lg:flex-row pb-30">
+            <div className="mt-20 lg:w-[70%]  lg:mt-30 flex flex-col-reverse  items-center justify-center max-lg:gap-10 gap-10  pb-30 overflow-hidden">
               <div className=" w-[100%] lg:flex flex-col justify-evenly">
                 <a href="https://chatapp-d4yb.onrender.com" className="w-fit">
                   <div className="flex">
@@ -373,7 +407,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="lg:w-[90%]">
+              <div className="lg:w-[90%] md:hidden">
                 <a href="https://chatapp-d4yb.onrender.com">
                   <img
                     className="rounded-3xl w-full h-60 lg:h-100 object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
@@ -382,17 +416,42 @@ const App = () => {
                   />
                 </a>
               </div>
+              <a href="https://chatapp-d4yb.onrender.com">
+                <div
+                  className="relative max-md:hidden h-[400px] max-sm:h-[300px]  rounded-3xl sm:rounded-4xl  flex flex-col gap-4 lg:flex-row  justify-center items-center mt-8  overflow-hidden 
+              border border-neutral-200 bg-white/30"
+                >
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={chat4}
+                    alt=""
+                  />
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={chat1}
+                    alt=""
+                  />
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={chat3}
+                    alt=""
+                  />
+                  <span className="absolute max-sm:hidden  top-5 right-10">
+                    <CiLocationArrow1 />
+                  </span>
+                </div>
+              </a>
             </div>
           </div>
 
           <div className="">
-            <div className="border-b pb-3 border-neutral-600 sticky top-0 pt-10 bg-[#f5f5f5] ">
+            <div className="border-b pb-3 border-neutral-600 sticky top-0 pt-10 bg-[#f5f5f5] z-99">
               <p className="text-2xl bg-black text-white px-3  w-fit rounded-2xl">
                 03
               </p>
             </div>
 
-            <div className="mt-20 lg:mt-30 flex flex-col  gap-10 lg:flex-row pb-30">
+            <div className="mt-20 lg:w-[70%]  lg:mt-30 flex flex-col-reverse  items-center justify-center max-lg:gap-10 gap-10  pb-30 overflow-hidden">
               <div className=" w-[100%] lg:flex flex-col justify-evenly">
                 <a
                   href="https://bgremoval-frontend.onrender.com"
@@ -424,7 +483,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="lg:w-[90%]">
+              <div className="lg:w-[90%] md:hidden">
                 <a href="https://bgremoval-frontend.onrender.com">
                   <img
                     className="rounded-3xl w-full h-60 lg:h-100 object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
@@ -433,6 +492,31 @@ const App = () => {
                   />
                 </a>
               </div>
+              <a href="https://bgremoval-frontend.onrender.com">
+                <div
+                  className="relative max-md:hidden  h-[400px] max-sm:h-[300px]  rounded-3xl sm:rounded-4xl  flex flex-col gap-4 lg:flex-row  justify-center items-center mt-8  overflow-hidden 
+              border border-neutral-200 bg-white/30"
+                >
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={img2}
+                    alt=""
+                  />
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={img1}
+                    alt=""
+                  />
+                  <img
+                    className="rounded-3xl w-[550px] rotate-[-10deg] object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={img3}
+                    alt=""
+                  />
+                  <span className="max-sm:hidden absolute top-5 right-10">
+                    <CiLocationArrow1 />
+                  </span>
+                </div>
+              </a>
             </div>
           </div>
 
