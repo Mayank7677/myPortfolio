@@ -4,6 +4,8 @@ import chat1 from "./assets/chat1.png";
 import fs1 from "./assets/fs1.png";
 import aiImg1 from "./assets/aiImg-1.png";
 import Lenis from "@studio-freight/lenis";
+import { CiLocationArrow1 } from "react-icons/ci";
+import { BackgroundBeams } from "./components/ui/background-beams";
 
 const App = () => {
   useEffect(() => {
@@ -32,8 +34,9 @@ const App = () => {
   };
 
   return (
-    <div className=" bricolage-grotesque bg-[#f5f5f5]">
-      <div >
+    <div className=" bricolage-grotesque ">
+      <BackgroundBeams />
+      <div>
         <section className="min-h-screen px-6 py-5 sm:px-10 lg:px-20 bg-[#f5f5f5] ">
           <div className="flex justify-between text-lg sm:text-lg  tracking-tighter bg-cover z-10">
             <h1 className=" text-2xl">Mayyy.</h1>
@@ -288,19 +291,24 @@ const App = () => {
             </div>
 
             <div className="mt-20  lg:mt-30 flex flex-col  max-lg:gap-10 gap-10 lg:flex-row pb-30">
-              <div className=" w-[100%]">
-                <p className="text-4xl sm:text-6xl">StaySphere</p>
-                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[ md:text-xl lg:text-xl">
-                  StaySphere is a modern hotel management system built with the
-                  MERN stack. It streamlines hotel operations by offering
-                  features like secure authentication, dynamic room listings,
-                  real-time bookings, and a powerful admin dashboard with
-                  revenue analytics. It also supports image uploads, email
-                  notifications, and role-based access control for efficient
-                  management.
+              <div className=" w-[100%] lg:flex flex-col justify-evenly">
+                <a
+                  href="https://hotelmanagement-bxyq.onrender.com"
+                  className="w-fit"
+                >
+                  <div className="flex ">
+                    <p className="text-4xl sm:text-6xl">StaySphere</p>
+                  </div>
+                </a>
+
+                <p className="text-lg mt-3 sm:text-xl text-neutral-700 tracking-tight md:w-[ md:text-xl lg:text-xl">
+                  A full-stack MERN app for managing hotel bookings with admin
+                  and user panels. Features include JWT auth, role-based access,
+                  image uploads, email notifications, analytics dashboard, soft
+                  delete, and a responsive dark/light mode UI.
                 </p>
 
-                <div className="mt-7 lg:mt-5 text-neutral-100 flex flex-wrap gap-2 max-sm:text-sm">
+                <div className="mt-7 lg:mt-2  flex flex-wrap gap-2 max-sm:text-sm">
                   {[
                     "React",
                     "Express.js",
@@ -309,19 +317,21 @@ const App = () => {
                     "TailwindCSS",
                     "ShadCN",
                   ].map((tech, index) => (
-                    <p className=" bg-neutral-700 w-fit px-2 py-0.5 rounded-lg">
+                    <p className=" border border-neutral-400  w-fit px-2 rounded-lg">
                       {tech}
                     </p>
                   ))}
                 </div>
               </div>
 
-              <div className="lg:w-[90%]">
-                <img
-                  className="rounded-3xl w-full h-60 lg:h-100 object-cover"
-                  src={hms1}
-                  alt=""
-                />
+              <div className="lg:w-[90%] ">
+                <a href="https://hotelmanagement-bxyq.onrender.com">
+                  <img
+                    className="rounded-3xl w-full h-60 lg:h-100 object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={hms1}
+                    alt=""
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -334,20 +344,19 @@ const App = () => {
             </div>
 
             <div className="mt-20 lg:mt-30 flex flex-col  gap-10 lg:flex-row pb-30">
-              <div className=" w-[100%]">
-                <p className="text-4xl sm:text-6xl">VibeRoom</p>
+              <div className=" w-[100%] lg:flex flex-col justify-evenly">
+                <a href="https://chatapp-d4yb.onrender.com" className="w-fit">
+                  <div className="flex">
+                    <p className="text-4xl sm:text-6xl">VibeRom</p>
+                  </div>
+                </a>
                 <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[ md:text-xl lg:text-xl">
-                  VibeRoom is a real-time chat application built using the MERN
-                  stack and Socket.IO. It enables users to connect instantly
-                  with secure authentication and private chat support, , online
-                  presence status, and real-time message updates. The app uses
-                  Zustand for global state management and bcrypt for password
-                  protection, ensuring both performance and security. VibeRoom
-                  delivers a seamless and interactive messaging experience
-                  across devices.
+                  A MERN stack chat application with real-time messaging powered
+                  by Socket.IO. Includes JWT authentication, user management,
+                  responsive UI, and smooth user experience for private chats.
                 </p>
 
-                <div className="mt-7 lg:mt-5 text-neutral-100 flex flex-wrap gap-2 max-sm:text-sm">
+                <div className="mt-7 lg:mt-5  flex flex-wrap gap-2 max-sm:text-sm">
                   {[
                     "React",
                     "Express.js",
@@ -357,7 +366,7 @@ const App = () => {
                     "Socket.io",
                     "Zustand",
                   ].map((tech, index) => (
-                    <p className=" bg-neutral-700 w-fit px-2 py-0.5 rounded-lg">
+                    <p className=" border border-neutral-400  w-fit px-2 rounded-lg">
                       {tech}
                     </p>
                   ))}
@@ -365,11 +374,13 @@ const App = () => {
               </div>
 
               <div className="lg:w-[90%]">
-                <img
-                  className="rounded-3xl w-full h-60 lg:h-100 object-cover"
-                  src={chat1}
-                  alt=""
-                />
+                <a href="https://chatapp-d4yb.onrender.com">
+                  <img
+                    className="rounded-3xl w-full h-60 lg:h-100 object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={chat1}
+                    alt=""
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -382,8 +393,13 @@ const App = () => {
             </div>
 
             <div className="mt-20 lg:mt-30 flex flex-col  gap-10 lg:flex-row pb-30">
-              <div className=" w-[100%]">
-                <p className="text-4xl sm:text-6xl">AI Image Enhancer</p>
+              <div className=" w-[100%] lg:flex flex-col justify-evenly">
+                <a
+                  href="https://bgremoval-frontend.onrender.com"
+                  className="w-fit"
+                >
+                  <p className="text-4xl sm:text-6xl">AI Image Enhancer</p>
+                </a>
                 <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[ md:text-xl lg:text-xl">
                   The AI Image Enhancer is a SaaS web app built with the MERN
                   stack and ClipDrop AI. It lets users remove backgrounds and
@@ -392,7 +408,7 @@ const App = () => {
                   quick, high-quality image edits.
                 </p>
 
-                <div className="mt-7 lg:mt-5 text-neutral-100 flex flex-wrap gap-2 max-sm:text-sm">
+                <div className="mt-7 lg:mt-5  flex flex-wrap gap-2 max-sm:text-sm">
                   {[
                     "React",
                     "Express.js",
@@ -401,7 +417,7 @@ const App = () => {
                     "TailwindCSS",
                     "Material UI",
                   ].map((tech, index) => (
-                    <p className=" bg-neutral-700 w-fit px-2 py-0.5 rounded-lg">
+                    <p className="border border-neutral-400  w-fit px-2 rounded-lg">
                       {tech}
                     </p>
                   ))}
@@ -409,16 +425,18 @@ const App = () => {
               </div>
 
               <div className="lg:w-[90%]">
-                <img
-                  className="rounded-3xl w-full h-60 lg:h-100 object-cover"
-                  src={aiImg1}
-                  alt=""
-                />
+                <a href="https://bgremoval-frontend.onrender.com">
+                  <img
+                    className="rounded-3xl w-full h-60 lg:h-100 object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                    src={aiImg1}
+                    alt=""
+                  />
+                </a>
               </div>
             </div>
           </div>
 
-          <div className="">
+          {/* <div className="">
             <div className="border-b pb-3 border-neutral-600 sticky top-0 pt-10 bg-[#f5f5f5] ">
               <p className="text-2xl bg-black text-white px-3  w-fit rounded-2xl">
                 04
@@ -426,7 +444,7 @@ const App = () => {
             </div>
 
             <div className="mt-20 lg:mt-30 flex flex-col  gap-10 lg:flex-row pb-30">
-              <div className=" w-[100%]">
+              <div className=" w-[100%] lg:flex flex-col justify-evenly">
                 <p className="text-4xl sm:text-6xl">StaySphere</p>
                 <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[ md:text-xl lg:text-xl">
                   StaySphere is a modern hotel management system built with the
@@ -438,10 +456,10 @@ const App = () => {
                   management.
                 </p>
 
-                <div className="mt-7 lg:mt-5 text-neutral-100 flex flex-wrap gap-2 max-sm:text-sm">
+                <div className="mt-7 lg:mt-5  flex flex-wrap gap-2 max-sm:text-sm">
                   {["React", "TailwindCSS", "Context API", "ShadCN"].map(
                     (tech, index) => (
-                      <p className=" bg-neutral-700 w-fit px-2 py-0.5 rounded-lg">
+                      <p className=" border border-neutral-400  w-fit px-2 rounded-lg">
                         {tech}
                       </p>
                     )
@@ -451,13 +469,13 @@ const App = () => {
 
               <div className="lg:w-[90%]">
                 <img
-                  className="rounded-3xl w-full h-60 lg:h-100 object-cover"
+                  className="rounded-3xl w-full h-60 lg:h-100 object-cover shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
                   src={fs1}
                   alt=""
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
