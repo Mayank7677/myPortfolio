@@ -2,11 +2,10 @@ import React, { useEffect } from "react";
 import hms1 from "./assets/hms-1.png";
 import chat1 from "./assets/chat1.png";
 import fs1 from "./assets/fs1.png";
+import aiImg1 from "./assets/aiImg-1.png";
 import Lenis from "@studio-freight/lenis";
 
-
 const App = () => {
-
   useEffect(() => {
     const lenis = new Lenis({
       duration: 2.5, // Very smooth, slow deceleration
@@ -27,59 +26,60 @@ const App = () => {
     };
   }, []);
 
-
   const handleScroll = (id) => {
     const section = document.getElementById(id.toLowerCase());
     section?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className=" bricolage-grotesque ">
-      <section className="min-h-screen px-6 py-5 sm:px-10 lg:px-20">
-        <div className="flex justify-between text-lg sm:text-xl  tracking-tighter bg-cover z-10">
-          <h1 className=" text-2xl">Mayyy.</h1>
+    <div className=" bricolage-grotesque bg-[#f5f5f5]">
+      <div >
+        <section className="min-h-screen px-6 py-5 sm:px-10 lg:px-20 bg-[#f5f5f5] ">
+          <div className="flex justify-between text-lg sm:text-lg  tracking-tighter bg-cover z-10">
+            <h1 className=" text-2xl">Mayyy.</h1>
 
-          <div className="items-end md:flex  gap-4 w-fit ">
-            {[ "Skill","Work" , "About", "Contact"].map((item, i) => (
-              <div
-                key={i}
-                className="relative group cursor-pointer w-full"
-                onClick={() => handleScroll(item)}
-              >
-                <div className="relative group cursor-pointer w-full">
-                  <span className="block text-end group-hover:text-black transition-colors duration-300 ">
-                    {item}
-                  </span>
-                  <span className="block absolute left-0 -bottom-1 h-[1px] bg-neutral-600 transition-all duration-300 group-hover:w-full w-0"></span>
+            <div className="items-end md:flex  gap-4 w-fit ">
+              {["Skill", "Work", "About", "Contact"].map((item, i) => (
+                <div
+                  key={i}
+                  className="relative group cursor-pointer w-full"
+                  onClick={() => handleScroll(item)}
+                >
+                  <div className="relative group cursor-pointer w-full">
+                    <span className="block text-end group-hover:text-white transition-colors duration-300 ">
+                      {item}
+                    </span>
+                    <span className="block absolute left-0 -bottom-1 h-[1px] bg-neutral-100 transition-all duration-300 group-hover:w-full w-0"></span>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-10 sm:mt-20 md:mt-40 xl:mt-50">
+            <div className="max-[500px]:block flex items-center gap-5 lg:gap-10">
+              <div>
+                <img
+                  className="h-30  rounded-2xl rotate-354"
+                  src="https://images.unsplash.com/photo-1618051236199-d9850be1dab1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDY4fHx8ZW58MHx8fHx8"
+                  alt=""
+                />
               </div>
-            ))}
-          </div>
-        </div>
 
-        <div className="mt-3 sm:mt-20 md:mt-40 xl:mt-50">
-          <div className="max-[500px]:block flex items-center gap-5 lg:gap-10">
-            <div>
-              <img
-                className="h-30  rounded-2xl rotate-354"
-                src="https://images.unsplash.com/photo-1618051236199-d9850be1dab1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDY4fHx8ZW58MHx8fHx8"
-                alt=""
-              />
+              <div className=" text-3xl sm:text-4xl lg:text-5xl tracking-tighter">
+                <p>hyy,</p>
+                <p>I'm Mayank Panwar</p>
+              </div>
             </div>
 
-            <div className="text-black text-3xl sm:text-4xl lg:text-5xl tracking-tighter">
-              <p>hyy,</p>
-              <p>I'm Mayank Panwar</p>
+            <div className="mt-6 text-5xl sm:text-6xl lg:text-8xl xl:text-8xl md:w-[80%] xl:w-[74%]">
+              <p>- Blending aesthetics & performance to create a better web.</p>
             </div>
           </div>
+        </section>
+      </div>
 
-          <div className="mt-6 text-5xl sm:text-6xl lg:text-8xl xl:text-9xl md:w-[80%] xl:w-[74%]">
-            <p>- Blending aesthetics & performance to create a better web.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mt-20 md:mt-0 lg:mt-60 px-6 py-5 sm:px-10 lg:px-20">
+      <section className="pt-20 md:mt-0 lg:pt-30 px-6 py-5 sm:px-10 lg:px-20 ">
         <div>
           <p className="text-5xl sm:text-6xl lg:text-8xl tracking-tighter">
             What i do
@@ -264,7 +264,10 @@ const App = () => {
         </div>
       </section>
 
-      <section id="work" className="md:mt-20 px-6 py-5 sm:px-10 lg:px-20">
+      <section
+        id="work"
+        className="md:pt-20 px-6 py-5 sm:px-10 lg:px-20 bg-[#f5f5f5]"
+      >
         <div>
           <p className="text-5xl sm:text-6xl lg:text-8xl tracking-tighter">
             Projects
@@ -284,14 +287,17 @@ const App = () => {
               </p>
             </div>
 
-            <div className="mt-20 lg:mt-30 flex flex-col  max-lg:gap-10 lg:flex-row pb-30">
-              <div className="">
+            <div className="mt-20  lg:mt-30 flex flex-col  max-lg:gap-10 gap-10 lg:flex-row pb-30">
+              <div className=" w-[100%]">
                 <p className="text-4xl sm:text-6xl">StaySphere</p>
-                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[70%] lg:w-[60%] md:text-xl lg:text-2xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia ratione velit laborum beatae saepe! Odio possimus
-                  totam non praesentium voluptate maiores porro rerum? Quas enim
-                  quidem accusamus fuga blanditiis quasi!
+                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[ md:text-xl lg:text-xl">
+                  StaySphere is a modern hotel management system built with the
+                  MERN stack. It streamlines hotel operations by offering
+                  features like secure authentication, dynamic room listings,
+                  real-time bookings, and a powerful admin dashboard with
+                  revenue analytics. It also supports image uploads, email
+                  notifications, and role-based access control for efficient
+                  management.
                 </p>
 
                 <div className="mt-7 lg:mt-5 text-neutral-100 flex flex-wrap gap-2 max-sm:text-sm">
@@ -310,7 +316,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="w-[100%]">
+              <div className="lg:w-[90%]">
                 <img
                   className="rounded-3xl w-full h-60 lg:h-100 object-cover"
                   src={hms1}
@@ -327,14 +333,18 @@ const App = () => {
               </p>
             </div>
 
-            <div className="mt-20 lg:mt-30 flex flex-col  max-lg:gap-10 lg:flex-row pb-30">
-              <div className="md:w0%]">
-                <p className="text-4xl sm:text-6xl">Vibe Chat</p>
-                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[70%] lg:w-[60%] md:text-xl lg:text-2xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia ratione velit laborum beatae saepe! Odio possimus
-                  totam non praesentium voluptate maiores porro rerum? Quas enim
-                  quidem accusamus fuga blanditiis quasi!
+            <div className="mt-20 lg:mt-30 flex flex-col  gap-10 lg:flex-row pb-30">
+              <div className=" w-[100%]">
+                <p className="text-4xl sm:text-6xl">VibeRoom</p>
+                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[ md:text-xl lg:text-xl">
+                  VibeRoom is a real-time chat application built using the MERN
+                  stack and Socket.IO. It enables users to connect instantly
+                  with secure authentication and private chat support, , online
+                  presence status, and real-time message updates. The app uses
+                  Zustand for global state management and bcrypt for password
+                  protection, ensuring both performance and security. VibeRoom
+                  delivers a seamless and interactive messaging experience
+                  across devices.
                 </p>
 
                 <div className="mt-7 lg:mt-5 text-neutral-100 flex flex-wrap gap-2 max-sm:text-sm">
@@ -354,7 +364,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="w-[100%]">
+              <div className="lg:w-[90%]">
                 <img
                   className="rounded-3xl w-full h-60 lg:h-100 object-cover"
                   src={chat1}
@@ -371,14 +381,15 @@ const App = () => {
               </p>
             </div>
 
-            <div className="mt-20 lg:mt-30 flex flex-col  max-lg:gap-10 lg:flex-row pb-30">
-              <div className="md:w0%]">
-                <p className="text-4xl sm:text-6xl">Task Manager</p>
-                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[70%] lg:w-[60%] md:text-xl lg:text-2xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia ratione velit laborum beatae saepe! Odio possimus
-                  totam non praesentium voluptate maiores porro rerum? Quas enim
-                  quidem accusamus fuga blanditiis quasi!
+            <div className="mt-20 lg:mt-30 flex flex-col  gap-10 lg:flex-row pb-30">
+              <div className=" w-[100%]">
+                <p className="text-4xl sm:text-6xl">AI Image Enhancer</p>
+                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[ md:text-xl lg:text-xl">
+                  The AI Image Enhancer is a SaaS web app built with the MERN
+                  stack and ClipDrop AI. It lets users remove backgrounds and
+                  enhance images instantly. With Razorpay integration for
+                  payments and secure auth, it's perfect for creators needing
+                  quick, high-quality image edits.
                 </p>
 
                 <div className="mt-7 lg:mt-5 text-neutral-100 flex flex-wrap gap-2 max-sm:text-sm">
@@ -397,10 +408,10 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="w-[100%]">
+              <div className="lg:w-[90%]">
                 <img
                   className="rounded-3xl w-full h-60 lg:h-100 object-cover"
-                  src={fs1}
+                  src={aiImg1}
                   alt=""
                 />
               </div>
@@ -414,14 +425,17 @@ const App = () => {
               </p>
             </div>
 
-            <div className="mt-20 lg:mt-30 flex flex-col  max-lg:gap-10 lg:flex-row pb-30">
-              <div className="">
-                <p className="text-4xl sm:text-6xl">Lux Fashion</p>
-                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[70%] lg:w-[60%] md:text-xl lg:text-2xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia ratione velit laborum beatae saepe! Odio possimus
-                  totam non praesentium voluptate maiores porro rerum? Quas enim
-                  quidem accusamus fuga blanditiis quasi!
+            <div className="mt-20 lg:mt-30 flex flex-col  gap-10 lg:flex-row pb-30">
+              <div className=" w-[100%]">
+                <p className="text-4xl sm:text-6xl">StaySphere</p>
+                <p className="text-lg mt-3 sm:text-xl text-neutral-600 tracking-tight md:w-[ md:text-xl lg:text-xl">
+                  StaySphere is a modern hotel management system built with the
+                  MERN stack. It streamlines hotel operations by offering
+                  features like secure authentication, dynamic room listings,
+                  real-time bookings, and a powerful admin dashboard with
+                  revenue analytics. It also supports image uploads, email
+                  notifications, and role-based access control for efficient
+                  management.
                 </p>
 
                 <div className="mt-7 lg:mt-5 text-neutral-100 flex flex-wrap gap-2 max-sm:text-sm">
@@ -435,7 +449,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="w-[100%]">
+              <div className="lg:w-[90%]">
                 <img
                   className="rounded-3xl w-full h-60 lg:h-100 object-cover"
                   src={fs1}
@@ -449,7 +463,7 @@ const App = () => {
 
       <section
         id="about"
-        className="mt-30 pb-30 lg:pb-50 px-6 py-5 sm:px-10 lg:px-20 "
+        className="pt-30 pb-30 lg:pb-50 px-6 py-5 sm:px-10 lg:px-20 bg-[#f5f5f5]"
       >
         <div className="flex gap-2 sm:items-center ">
           <div>
@@ -507,15 +521,19 @@ const App = () => {
 
             <div className="mt-20 flex flex-col gap-5">
               <div className=" bg-[#8290f5] px-4 py-2 md:px-6 md:py-3 rounded-4xl w-fit text-black max-[400px]:text-xl text-3xl hover:bg-white hover:text-black cursor-pointer hover:-rotate-6 transition-all duration-300">
-                <a href="">You can email me ✉️</a>
+                <a href="mailto:mayankpanwar066@gmail.com">
+                  You can email me ✉️
+                </a>
               </div>
 
               <div className="bg-[#8290f5] px-4 py-2 md:px-6 md:py-3 rounded-4xl w-fit text-black max-[400px]:text-xl text-3xl hover:bg-white hover:text-black cursor-pointer hover:-rotate-6 transition-all duration-300">
-                <a href="">Find me on LinkedIn 💬 </a>
+                <a href="https://www.linkedin.com/in/mayankpanwar77">
+                  Find me on LinkedIn 💬{" "}
+                </a>
               </div>
 
               <div className="bg-[#8290f5] px-4 py-2 md:px-6 md:py-3 rounded-4xl w-fit text-black max-[400px]:text-xl text-3xl hover:bg-white hover:text-black cursor-pointer hover:-rotate-6 transition-all duration-300">
-                <a href="">
+                <a href="https://github.com/Mayank7677">
                   Checkout my Github <span className="sm:ml-4">✉️</span>
                 </a>
               </div>
