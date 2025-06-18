@@ -92,11 +92,11 @@ const App = () => {
 
       <section className="pt-20 md:mt-0 lg:pt-30 px-6 py-5 sm:px-10 lg:px-20 ">
         <div>
-          <p className="text-5xl sm:text-6xl lg:text-8xl tracking-tighter">
+          <p className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">
             What i do
           </p>
 
-          <p className="text-xl mt-5 md:mt-7 lg:mt-10 text-neutral-600 tracking-tight md:w-[70%] lg:w-[60%] md:text-2xl lg:text-3xl">
+          <p className="text-xl mt-5 md:mt-7 text-neutral-600 tracking-tight md:w-[70%] lg:w-[60%] md:text-2xl ">
             I build fast, reliable, full-stack web apps. From slick frontends to
             robust backends, I deliver complete, scalable solutions for
             startups, teams, and businesses.
@@ -104,17 +104,17 @@ const App = () => {
         </div>
 
         <div id="skill" className="mt-25 text-end">
-          <p className="text-5xl sm:text-6xl lg:text-8xl tracking-tighter">
+          <p className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">
             Skills
           </p>
 
-          <p className="text-xl mt-5 md:mt-7 text-end lg:mt-10 text-neutral-600 tracking-tight  md:text-2xl lg:text-3xl sm:pl-[5%] md:pl-[15%] lg:pl-[25%] xl:pl-[35%] 2xl:pl-[60%]">
+          <p className="text-xl mt-5 md:mt-7 text-end  text-neutral-600 tracking-tight  md:text-2xl  sm:pl-[5%] md:pl-[15%] lg:pl-[25%] xl:pl-[37%] 2xl:pl-[56%]">
             The Powers I wield to craft exceptional digital experiences. From
             frontend finesse to backend brilliance .
           </p>
         </div>
 
-        <div className="flex items-center justify-center flex-wrap gap-4 my-25 lg:mt-40">
+        <div className="flex items-center justify-center flex-wrap gap-4 my-25 lg:mt-30">
           <div className="flex items-center w-full sm:w-72 lg:w-80 h-auto border  rounded-xl border-neutral-300">
             <div className="w-14 h-14 flex justify-center items-center rounded-lg">
               <img
@@ -280,17 +280,17 @@ const App = () => {
         className="md:pt-20 px-6 py-5 sm:px-10 lg:px-20 bg-[#f5f5f5]"
       >
         <div>
-          <p className="text-5xl sm:text-6xl lg:text-8xl tracking-tighter">
+          <p className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">
             Projects
           </p>
 
-          <p className="text-xl mt-5 md:mt-7 lg:mt-10 text-neutral-600 tracking-tight md:w-[70%] lg:w-[60%] md:text-2xl lg:text-3xl">
+          <p className="text-xl mt-5 md:mt-7  text-neutral-600 tracking-tight md:w-[70%] lg:w-[60%] md:text-2xl">
             Thoughtfully crafted digital experiences that blend utility and
             aesthetics into something functional, memorable, and refined.
           </p>
         </div>
 
-        <div className="mt-15 lg:mt-30 flex flex-col gap-">
+        <div className="mt-15 lg:mt-20 flex flex-col gap-">
           <div className="">
             <div className="border-b pb-3 border-neutral-600 sticky top-0 pt-10 bg-[#f5f5f5] z-99">
               <p className="text-2xl bg-black text-white px-3  w-fit rounded-2xl">
@@ -565,7 +565,7 @@ const App = () => {
 
       <section
         id="about"
-        className="pt-30 pb-30 lg:pb-50 px-6 py-5 sm:px-10 lg:px-20 bg-[#f5f5f5]"
+        className="pt-20 pb-30 lg:pb-50 px-6 py-5 sm:px-10 lg:px-20 bg-[#f5f5f5]"
       >
         <div className="flex gap-2 sm:items-center ">
           <div>
@@ -600,7 +600,7 @@ const App = () => {
               passion project, I bring code to life with purpose and precision.
             </p>
 
-            <p className=" text-neutral-950 mt-10">
+            <p className=" text-neutral-700 mt-10 bg-neutral-200 px-3 rounded-2xl py-2">
               {" "}
               Currently open to new challenges and opportunities to create
               something meaningful.
